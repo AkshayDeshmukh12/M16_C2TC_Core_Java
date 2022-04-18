@@ -5,13 +5,13 @@ public class Example1 {
 		System.out.println("Example1");
 		}
 }
-  class Example2 extends Example1
+  class E extends Example1
  {
 	 void accept() {
 		 System.out.println("Example2");
 	 }
  }
- class Example3 extends Example2
+ class Example3 extends E
  {
 	 void display()
 	 {

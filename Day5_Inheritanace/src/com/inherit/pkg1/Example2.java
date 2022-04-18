@@ -1,11 +1,10 @@
 package com.inherit.pkg1;
-
-public class Example2 {
+ class Green  {
 	void color() {
 		System.out.println("Based on Green Color");
 	}
 }
-class Flower extends Example2{
+class Flower extends Green{
 	void color1()
 	{
 		System.out.println("Flower");
@@ -14,13 +13,13 @@ class Flower extends Example2{
 	
 	
 }
-class red extends Flower{
+public class Example2 extends Flower {
 	void color2() {
 		System.out.println("Red color");
 	}
 
 	public static void main(String[] args) {
-	red r=new red();
+		Example2 r=new Example2();
 	r.color();
 	r.color1();
 	r.color2();

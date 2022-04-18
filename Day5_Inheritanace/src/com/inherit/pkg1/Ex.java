@@ -1,23 +1,26 @@
 package com.inherit.pkg1;
 
-public class Example3 {
+ class Blue {
 	void display()
 	{
 		System.out.println("Welcom TO CT2C");
 	}
 }
- class Blue extends Example3
-{
-	void pass()
+	public class Ex extends Blue
 	{
-		System.out.println("Its Blue Color");
-	}
+		void pass()
+		{
+			System.out.println("Its Blue Color");
+		}
 
+	
 	public static void main(String[] args) {
-		Blue b=new Blue();
-		b.pass();
+		
+		Ex b=new Ex();
 		b.display();
+		b.pass();
 
 	}
+	
 
 }

@@ -12,19 +12,21 @@ public class Example3 {
 	{
 		return this;
 	}
-	void print()
+	void print(int a, int b)
 	{
 		
 		
 		System.out.println("value of a is:"+a);
 		
-		System.out.println("value of a is:"+b);
+		System.out.println("value of b is:"+b);
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Example3 e=new Example3();
 		e.accept();
+		e.print(54,91);
+		
 	}
 
 }

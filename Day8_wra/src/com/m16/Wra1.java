@@ -1,14 +1,14 @@
 package com.m16;
-
-public abstract class Fruit {
+abstract class Fruit // this is abstract class 
+{
 	public abstract void test(); // it's an abstract method without method body
 	public void color() // Concrete method having body 
 	{
 		System.out.println("Color of Fruit is Not Important ");
 	}
-	
-	
-// fruit class end 
+
+
+} // fruit class end 
 
 class Mango extends Fruit 
 {
@@ -20,8 +20,8 @@ class Mango extends Fruit
 	{
 		System.out.println("Mango Color is Yellow");
 	}
-	
-}
+
+} // mango class end
 
 class Lemon extends Fruit
 {
@@ -29,31 +29,23 @@ class Lemon extends Fruit
 	{
 		System.out.println("Lemon test is citrus ");
 	}
-// lemon class end
+} // lemon class end
 
-}
- public class AbstractClassExample {
-	public void main(String[] args) {
-		
+public class Wra1 {
+
+	public static void main(String[] args) {
+
 	//Fruit f= new Fruit(); here , we can't create object for Abstract Class
-		
+
 		Fruit f= new Mango();
 		f.test();
 		f.color();
-		
+
 		Fruit ff= new Lemon();
 		ff.test();
 		ff.color();
 
 	}
-  }
+
 }
-
-
-
-
-
-
-
-
 

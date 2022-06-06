@@ -1,13 +1,10 @@
 package com.tns.application;
 
-import com.tns.framework.BankAcc;
-import com.tns.framework.BankFactory;
-import com.tns.framework.CurrentAcc;
 
 import com.tns.framework.SavingAcc;
 
 
-public class MMSavingAcc extends BankAcc
+public class MMSavingAcc extends SavingAcc
 {
 
 	public MMSavingAcc(int accNo, String accNm, Float charges) {

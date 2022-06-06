@@ -1,28 +1,32 @@
 package com.tns.application;
+
 import com.tns.framework.BankAcc;
 import com.tns.framework.BankFactory;
-import com.tns.framework.MMSavingAcc;
+import com.tns.framework.CurrentAcc;
+
+import com.tns.framework.SavingAcc;
 
 
-public class MMBankFactory extends BankFactory
+public class MMSavingAcc extends BankAcc
 {
 
-	@Override
-	public <MMSavingAcc> MMSavingAcc getNewSavingAcc(int accNo, String accNm, Float accBal) {
-		// TODO Auto-generated method stub
-		return null;
+	public MMSavingAcc(int accNo, String accNm, Float charges) {
+		super(accNo, accNm, charges);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public MMCurrentAcc getNewCurrentAcc(int accNo, String accNm, float accBal, float deliveryCharges) {
+	public String toString() {
+		return String.format("MMSavingAcc [toString()=%s]", super.toString());
+	}
+
+	@Override
+	public void bookproduct(float charges) {
 		// TODO Auto-generated method stub
-		return null;
+		
 	}
 
-	
-	}
-
-	
+}
 
 
 	

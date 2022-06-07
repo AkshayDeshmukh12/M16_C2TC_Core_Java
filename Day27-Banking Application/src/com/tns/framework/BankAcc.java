@@ -5,7 +5,7 @@ public abstract class BankAcc {
 	private int accNo;
 	private String accNm;
 	private Float accBal;
-	public BankAcc(int accNo, String accNm, Float accBal) {
+	public BankAcc(int accNo, String accNm, Float accBAl) {
 		
 		this.accNo = accNo;
 		this.accNm = accNm;

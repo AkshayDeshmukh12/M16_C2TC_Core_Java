@@ -15,7 +15,7 @@ public class MMBankFactory extends BankFactory
 	}
 
 	@Override
-	public CurrentAcc getNewCurrentAcc(int accNo, String accNm, float accBal, float deliveryCharges) {
+	public CurrentAcc getNewCurrentAcc(int accNo, String accNm, float accBal, float creditLimit) {
 		// TODO Auto-generated method stub
 		return null;
 	}

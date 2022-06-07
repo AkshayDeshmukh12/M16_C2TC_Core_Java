@@ -5,16 +5,16 @@ public abstract class BankAcc {
 	private int accNo;
 	private String accNm;
 	private Float accBal;
-	public BankAcc(int accNo, String accNm, Float charges) {
+	public BankAcc(int accNo, String accNm, Float accBal) {
 		
 		this.accNo = accNo;
 		this.accNm = accNm;
 		this.accBal = accBal;
 	}
-	abstract public void bookproduct(float charges);
-	public void items(float charges)
+	abstract public void withdraw(float accBal);
+	public void deposit(float accBal)
 	{
-		System.out.println(charges);
+		System.out.println(accBal);
 	}
 	
 	public int getAccNo() {
@@ -29,15 +29,15 @@ public abstract class BankAcc {
 	public void setAccNm(String accNm) {
 		this.accNm = accNm;
 	}
-	public Float getCharges() {
+	public Float getAccBal() {
 		return accBal;
 	}
-	public void setCharges(Float charges) {
+	public void setAccBal(Float accBal) {
 		this.accBal = accBal;
 	}
 	@Override
 	public String toString() {
-		return String.format("BankAcc [accNo=%s, accNm=%s, charges=%s]", accNo, accNm, accBal);
+		return String.format("BankAcc [accNo=%s, accNm=%s, accBal=%s]", accNo, accNm, accBal);
 	}
 	
 }

@@ -7,8 +7,8 @@ import com.tns.framework.SavingAcc;
 public class MMSavingAcc extends SavingAcc
 {
 
-	public MMSavingAcc(int accNo, String accNm, Float charges) {
-		super(accNo, accNm, charges);
+	public MMSavingAcc(int accNo, String accNm, Float accBal) {
+		super(accNo, accNm, accBal);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -18,7 +18,7 @@ public class MMSavingAcc extends SavingAcc
 	}
 
 	@Override
-	public void bookproduct(float charges) {
+	public void withdraw(float accBal) {
 		// TODO Auto-generated method stub
 		
 	}

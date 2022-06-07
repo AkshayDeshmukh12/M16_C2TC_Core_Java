@@ -1,10 +1,18 @@
 package com.tns.application;
 
-public class MMCurrentAcc {
+import com.tns.framework.CurrentAcc;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class MMCurrentAcc extends CurrentAcc {
 
+	public MMCurrentAcc(int accNo, String accNm, float accBal, float creditLimit) {
+		super(accNo, accNm, accBal, creditLimit);
+		
 	}
 
+	@Override
+	public String toString() {
+		return String.format("MMCurrentAcc [toString()=%s]", super.toString());
+	}
+
+	
 }
